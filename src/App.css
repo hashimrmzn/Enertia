@@ -235,12 +235,14 @@ h1 {
   outline: none;
   box-shadow: none;
 }
+
 header.site-header {
-    padding: 20px 20px 0 20px;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  padding: 20px 20px 0 20px;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
+
 .bg-header {
-background-color: #fff;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -357,55 +359,65 @@ background-color: #fff;
 .left-menu-box {
   animation: slideInFromRight 0.4s ease-out;
 }
-.carbon-footprint-sec{
+
+.carbon-footprint-sec {
   padding: 100px 20px;
   background-color: #FAFAFA;
 }
-.single-footprint img{
+
+.single-footprint img {
   width: 100%;
   height: auto;
-   transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
   transform-origin: center center;
   will-change: transform, box-shadow;
 }
-.single-footprint h3{
- font-size: 24px;
+
+.single-footprint h3 {
+  font-size: 24px;
   line-height: 130%;
   text-transform: uppercase;
   font-weight: 600;
   margin: 15px 0;
   min-height: 60px;
 }
-.carbon-footprint-sec p{
-font-weight: 400;
-font-size: 18px;
+
+.carbon-footprint-sec p {
+  font-weight: 400;
+  font-size: 18px;
   line-height: 150%;
 }
-.carbon-footprint-sec h2{
+
+.carbon-footprint-sec h2 {
   font-size: 38px;
   line-height: 130%;
   text-transform: uppercase;
-   margin: 30px 0 50px 0;
+  margin: 30px 0 50px 0;
   width: 60%;
   font-weight: 600;
 }
+
 .multi-footprint {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px; 
+  gap: 30px;
 }
+
 .single-footprint {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-origin: center center;
   will-change: transform, box-shadow;
   padding: 20px;
 }
-.single-footprint img:hover{
-   transform: scale(1.05);
+
+.single-footprint img:hover {
+  transform: scale(1.05);
 }
+
 .single-footprint:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
+
 .mini-menu ul li a {
   display: inline-block;
   transition: transform 0.2s ease, color 0.3s ease;
@@ -414,4 +426,70 @@ font-size: 18px;
 .mini-menu ul li a:hover {
   transform: translateX(8px);
   color: #e6e6e6;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .hero-top-img {
+    height: 70vh;
+  }
+
+  .bg-sec-home {
+    margin-top: 60px;
+    height: 50dvh;
+  }
+
+  .bg-sec-home h2 {
+    font-size: 36px;
+  }
+
+  .home-row-sec-content h2 {
+    font-size: 28px;
+  }
+  .carbon-footprint-sec {
+    padding: 60px 20px;}
+}
+
+@media only screen and (max-width: 991px) {
+  .multi-footprint {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carbon-footprint-sec h2 {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bottom-hero-icons.flex-row.just-center {
+    flex-wrap: wrap;
+}
+.bg-sec-home h2 {
+        font-size: 24px;
+    }
+    .home-row-sec-content.flex-row.just-space-between.align-cent {
+    flex-direction: column;
+    gap: 30px;
+}
+.small-col {
+    width: 100%;
+}
+.large-col {
+    width: 100%;
+}
+.home-row-secs {
+    padding: 40px 0 0px 0;
+}
+.carbon-footprint-sec h2 {
+        width: 100%;
+    }
+        .multi-footprint {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carbon-footprint-sec {
+    padding: 40px 20px 0;}
 }
