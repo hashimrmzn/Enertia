@@ -465,6 +465,9 @@ header.site-header {
 }
 
 @media only screen and (max-width: 767px) {
+   h1 {
+    font-size: 1em !important;
+  }
   .bottom-hero-icons.flex-row.just-center {
     flex-wrap: wrap;
 }
