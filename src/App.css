@@ -543,4 +543,7 @@ header.site-header {
     padding: 40px 0px 0;}
     .single-footprint h3 {
     font-size: 20px;}
+    section.bg-sec-home.flex-row.just-center.align-cent {
+    padding: 0 20px;
+}
 }
