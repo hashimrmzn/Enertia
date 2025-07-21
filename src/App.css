@@ -547,3 +547,18 @@ header.site-header {
     padding: 0 20px;
 }
 }
+.product-img {
+    text-align: center;
+}
+.product-detail-top-content{
+  width: 80%;
+}
+.product-img {
+    width: 50%;
+}
+.product-detail {
+    width: 50%;
+}
+.all-spec-with-price button:hover{
+  border-color: #000;
+}

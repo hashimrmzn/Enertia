@@ -1,4 +1,4 @@
-const imageModules = import.meta.glob('../assets/images/*.png', { eager: true });
+const imageModules = import.meta.glob('../assets/images/*.{png,webp}', { eager: true });
 
 const images = {};
 for (const path in imageModules) {
