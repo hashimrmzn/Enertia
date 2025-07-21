@@ -8,7 +8,7 @@ function LeftMenu({ closeHandler }) {
                 <div className="left-menu-box" onClick={(e) => e.stopPropagation()}>
                     <div className="mini-menu">
                         <h6>PRODUCTS</h6>
-                        <ul>
+                        <ul onClick={closeHandler}>
                             <li><Link to="/water-dispenser">Water dispenser →</Link></li>
                             <li><Link to="/inverter-geyser">Inverter geyser</Link></li>
 
@@ -20,7 +20,7 @@ function LeftMenu({ closeHandler }) {
 
                     <div className="mini-menu">
                         <h6>Other Links</h6>
-                        <ul>
+                        <ul onClick={closeHandler}>
                             <li><Link to="/store-locator">Store locator</Link></li>
                             <li><Link to="/about">About Enertia</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
