@@ -48,7 +48,7 @@ function DispanserProduct() {
             >
 
                 <Stack
-                    direction={{ xs: 'column', sm: 'column' }}
+                   direction={{ xs: 'column', sm: 'column', md: 'row' }}
                     alignItems="center"
                     justifyContent="space-between"
                 >
