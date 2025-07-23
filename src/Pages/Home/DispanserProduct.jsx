@@ -149,7 +149,7 @@ function DispanserProduct() {
                                             backgroundColor: value.color,
                                             borderRadius: '50%',
                                             minWidth: 0,
-                                            border:"none",
+                                            border: "none",
                                             padding: 0,
                                             '&:hover': {
                                                 backgroundColor: value.color,
@@ -218,17 +218,24 @@ function DispanserProduct() {
                                         disableRipple
                                         disableFocusRipple
                                         disableTouchRipple
+                                        selected={price === 339999}
                                         sx={{
                                             border: '1px solid #000',
                                             borderRadius: '20px',
                                             backgroundColor: 'transparent',
                                             '&.Mui-selected': {
-                                                backgroundColor: 'blue',
-                                                color: 'white',
+                                                color: 'black',
+                                                backgroundColor: '#d1d1d7',
+                                            },
+                                            '&.Mui-selected:hover': {
+                                                border: '1px solid #000',
+                                                color: 'black',
+                                                 backgroundColor: '#d1d1d7',
                                             },
                                             '&:hover': {
+                                                 color: 'black',
                                                 border: '1px solid #000',
-                                                backgroundColor: 'transparent',
+                                                backgroundColor: '#d1d1d7',
                                             },
                                         }}
                                         onClick={() => setprice(339999)}
@@ -242,19 +249,25 @@ function DispanserProduct() {
                                         disableRipple
                                         disableFocusRipple
                                         disableTouchRipple
+                                        selected={price === 279000}
                                         variant="outlined"
-                                        sx={{
+                                         sx={{
                                             border: '1px solid #000',
                                             borderRadius: '20px',
                                             backgroundColor: 'transparent',
                                             '&.Mui-selected': {
-                                                backgroundColor: 'blue',
-                                                color: 'white',
-
+                                                color: 'black',
+                                                backgroundColor: '#d1d1d7',
+                                            },
+                                            '&.Mui-selected:hover': {
+                                                border: '1px solid #000',
+                                                color: 'black',
+                                                 backgroundColor: '#d1d1d7',
                                             },
                                             '&:hover': {
+                                                 color: 'black',
                                                 border: '1px solid #000',
-                                                backgroundColor: 'transparent',
+                                                backgroundColor: '#d1d1d7',
                                             },
                                         }}
                                         onClick={() => setprice(279000)}
@@ -269,19 +282,25 @@ function DispanserProduct() {
                                         disableRipple
                                         disableFocusRipple
                                         disableTouchRipple
+                                        selected={price===267000}
                                         variant="outlined"
-                                        sx={{
+                                         sx={{
                                             border: '1px solid #000',
                                             borderRadius: '20px',
                                             backgroundColor: 'transparent',
                                             '&.Mui-selected': {
-                                                backgroundColor: 'blue',
-                                                color: 'white',
-
+                                                color: 'black',
+                                                backgroundColor: '#d1d1d7',
+                                            },
+                                            '&.Mui-selected:hover': {
+                                                border: '1px solid #000',
+                                                color: 'black',
+                                                 backgroundColor: '#d1d1d7',
                                             },
                                             '&:hover': {
+                                                 color: 'black',
                                                 border: '1px solid #000',
-                                                backgroundColor: 'transparent',
+                                                backgroundColor: '#d1d1d7',
                                             },
                                         }}
                                         onClick={() => setprice(267000)}

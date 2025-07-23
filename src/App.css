@@ -431,18 +431,22 @@ header.site-header {
 
 
 .product-img {
-    text-align: center;
+  text-align: center;
 }
-.product-detail-top-content{
+
+.product-detail-top-content {
   width: 80%;
 }
+
 .product-img {
-    width: 50%;
+  width: 50%;
 }
+
 .product-detail {
-    width: 50%;
+  width: 50%;
 }
-.all-spec-with-price button:hover{
+
+.all-spec-with-price button:hover {
   border-color: #000;
 }
 
@@ -451,19 +455,25 @@ header.site-header {
   .hero-top-img {
     height: 70vh;
   }
+
   .product-detail-top-content {
     width: 100%;
-}
-  .product-img{
+  }
+
+  .product-img {
     width: 100%;
   }
-.product-img img{
-  height: 50vh !important;
-  width: 30%!important;
-}
-.product-detail,.carbon-footprint-sec h2 {
-  width: 100%;
-}
+
+  .product-img img {
+    height: 50vh !important;
+    width: 30% !important;
+  }
+
+  .product-detail,
+  .carbon-footprint-sec h2 {
+    width: 100%;
+  }
+
   .bg-sec-home {
     margin-top: 60px;
     height: 50dvh;
@@ -476,8 +486,10 @@ header.site-header {
   .home-row-sec-content h2 {
     font-size: 28px;
   }
+
   .carbon-footprint-sec {
-    padding: 60px 20px;}
+    padding: 60px 20px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -493,94 +505,125 @@ header.site-header {
     font-size: 2.2em !important;
   }
 
- 
+
 }
 
 @media only screen and (max-width: 767px) {
-   h1 {
+  h1 {
     font-size: 1.2em !important;
   }
+
   .hero-top-img img {
     width: 100%;
-}
+  }
+
   .bottom-hero-icons.flex-row.just-center {
     flex-wrap: wrap;
-}
-.product-img img {
-        width: 40% !important;
-    }
-.single-icon-box p {
+  }
+
+  .product-img img {
+    width: 40% !important;
+  }
+
+  .single-icon-box p {
     font-size: 14px;
-}
-.single-icon-box img {
+  }
+
+  .single-icon-box img {
     height: 30px;
-    width: 30px;}
-    .single-icon-box {
+    width: 30px;
+  }
+
+  .single-icon-box {
     min-width: auto;
-}
-header.site-header{
-  background-color: #fff;
-}
-.hero-text-content {
-  padding-bottom: 20px;
-}
-.home-row-sec-content h2 {
-        font-size: 24px;
-    }
-    .all-spec-with-price button{
-      line-height: 1 !important;
-    }
-.left-menu-wrapper {
-  padding: 80px 20px 20px 20px;
-}
-.mini-menu ul li a{
-  margin-bottom: 0;
-}
-.close-btn.no-border button{
-      padding: 0 20px 0 0;
-}
-.left-menu-box {
+  }
+
+  header.site-header {
+    background-color: #fff;
+  }
+
+  .hero-text-content {
+    padding-bottom: 20px;
+  }
+
+  .home-row-sec-content h2 {
+    font-size: 24px;
+  }
+
+  .all-spec-with-price button {
+    line-height: 1 !important;
+  }
+
+  .left-menu-wrapper {
+    padding: 80px 20px 20px 20px;
+  }
+
+  .mini-menu ul li a {
+    margin-bottom: 0;
+  }
+
+  .close-btn.no-border button {
+    padding: 0 20px 0 0;
+  }
+
+  .left-menu-box {
     flex-direction: column;
     width: 100%;
     padding: 20px;
     gap: 20px;
-}
-.carbon-footprint-sec h2 {
-        font-size: 22px;
-        margin: 20px 0;
-    }
-    .hero-top-img {
-        height: 80vh;
-    }
-header.site-header {
-    padding: 20px 10px 0;}
-.bg-sec-home h2 {
-        font-size: 24px;
-    }
-    .home-row-sec-content.flex-row.just-space-between.align-cent {
+  }
+
+  .carbon-footprint-sec h2 {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+
+  .hero-top-img {
+    height: 80vh;
+  }
+
+  header.site-header {
+    padding: 20px 10px 0;
+  }
+
+  .bg-sec-home h2 {
+    font-size: 24px;
+  }
+
+  .home-row-sec-content.flex-row.just-space-between.align-cent {
     flex-direction: column;
     gap: 30px;
-}
-.small-col {
+  }
+
+  .small-col {
     width: 100%;
-}
-.large-col {
+  }
+
+  .large-col {
     width: 100%;
-}
-.home-row-secs {
+  }
+
+  .home-row-secs {
     padding: 40px 0 0px 0;
-}
-.carbon-footprint-sec h2 {
-        width: 100%;
-    }
-        .multi-footprint {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .carbon-footprint-sec {
-    padding: 40px 0px 0;}
-    .single-footprint h3 {
-    font-size: 20px;}
-    section.bg-sec-home.flex-row.just-center.align-cent {
+  }
+
+  .carbon-footprint-sec h2 {
+    width: 100%;
+  }
+
+  .multi-footprint {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .carbon-footprint-sec {
+    padding: 40px 0px 0;
+  }
+
+  .single-footprint h3 {
+    font-size: 20px;
+  }
+
+  section.bg-sec-home.flex-row.just-center.align-cent {
     padding: 0 20px;
-}
+  }
 }
