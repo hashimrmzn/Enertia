@@ -32,6 +32,9 @@ function ShowFaq({ question, answer, isOpen, onToggle }) {
                     sx={{
                         lineHeight:"150%",
                         mt: '20px',
+                        fontSize: {
+                            xs: '1rem',         
+                        } 
                     }}
                     >{answer}</Typography>
                 </Collapse>

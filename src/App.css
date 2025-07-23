@@ -537,7 +537,9 @@ header.site-header {
   .bottom-hero-icons.flex-row.just-center {
     flex-wrap: wrap;
   }
-
+.faq-sec h5 {
+  font-size: 18px;
+}
   .product-img img {
     width: 40% !important;
   }
