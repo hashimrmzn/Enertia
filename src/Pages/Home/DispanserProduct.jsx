@@ -33,7 +33,7 @@ const productColor = {
 
 
 function DispanserProduct() {
-    const [color, setcolor] = useState('black');
+    const [color, setcolor] = useState(Object.keys(productColor)[0]);
     const [price, setprice] = useState(339999);
 
     return (
@@ -48,7 +48,7 @@ function DispanserProduct() {
             >
 
                 <Stack
-                   direction={{ xs: 'column', sm: 'column', md: 'row' }}
+                    direction={{ xs: 'column', sm: 'column', md: 'row' }}
                     alignItems="center"
                     justifyContent="space-between"
                 >
@@ -149,13 +149,14 @@ function DispanserProduct() {
                                             backgroundColor: value.color,
                                             borderRadius: '50%',
                                             minWidth: 0,
+                                            border:"none",
                                             padding: 0,
-                                            border: '2px solid transparent',
                                             '&:hover': {
                                                 backgroundColor: value.color,
                                             },
                                             '&.Mui-selected': {
-                                                borderColor: 'black',
+                                                outline: '4px auto -webkit-focus-ring-color', // ✅ correct
+                                                border: 'none',
                                                 backgroundColor: value.color,
                                             },
                                             '&.Mui-selected:hover': {
@@ -206,174 +207,174 @@ function DispanserProduct() {
                                     alignItems="center"
                                     sx={{
                                         gap: {
-                                            xs: 1,   
-                                            sm: 2,  
-                                            md: 3, 
+                                            xs: 1,
+                                            sm: 2,
+                                            md: 3,
                                         },
                                     }}
                                 >
 
-                                <ToggleButton
-                                    disableRipple
-                                    disableFocusRipple
-                                    disableTouchRipple
-                                    sx={{
-                                        border: '1px solid #000',
-                                        borderRadius: '20px',
-                                        backgroundColor: 'transparent',
-                                        '&.Mui-selected': {
-                                            backgroundColor: 'blue',
-                                            color: 'white',
-                                        },
-                                        '&:hover': {
+                                    <ToggleButton
+                                        disableRipple
+                                        disableFocusRipple
+                                        disableTouchRipple
+                                        sx={{
                                             border: '1px solid #000',
+                                            borderRadius: '20px',
                                             backgroundColor: 'transparent',
-                                        },
-                                    }}
-                                    onClick={() => setprice(339999)}
-                                >
-                                    Sparkling + Filtration
-                                </ToggleButton>
+                                            '&.Mui-selected': {
+                                                backgroundColor: 'blue',
+                                                color: 'white',
+                                            },
+                                            '&:hover': {
+                                                border: '1px solid #000',
+                                                backgroundColor: 'transparent',
+                                            },
+                                        }}
+                                        onClick={() => setprice(339999)}
+                                    >
+                                        Sparkling + Filtration
+                                    </ToggleButton>
 
 
 
-                                <ToggleButton
-                                    disableRipple
-                                    disableFocusRipple
-                                    disableTouchRipple
-                                    variant="outlined"
-                                    sx={{
-                                        border: '1px solid #000',
-                                        borderRadius: '20px',
-                                        backgroundColor: 'transparent',
-                                        '&.Mui-selected': {
-                                            backgroundColor: 'blue',
-                                            color: 'white',
-
-                                        },
-                                        '&:hover': {
+                                    <ToggleButton
+                                        disableRipple
+                                        disableFocusRipple
+                                        disableTouchRipple
+                                        variant="outlined"
+                                        sx={{
                                             border: '1px solid #000',
+                                            borderRadius: '20px',
                                             backgroundColor: 'transparent',
-                                        },
-                                    }}
-                                    onClick={() => setprice(279000)}
+                                            '&.Mui-selected': {
+                                                backgroundColor: 'blue',
+                                                color: 'white',
 
-                                >
-                                    Only Sparkling
-                                </ToggleButton>
+                                            },
+                                            '&:hover': {
+                                                border: '1px solid #000',
+                                                backgroundColor: 'transparent',
+                                            },
+                                        }}
+                                        onClick={() => setprice(279000)}
+
+                                    >
+                                        Only Sparkling
+                                    </ToggleButton>
 
 
 
-                                <ToggleButton
-                                    disableRipple
-                                    disableFocusRipple
-                                    disableTouchRipple
-                                    variant="outlined"
-                                    sx={{
-                                        border: '1px solid #000',
-                                        borderRadius: '20px',
-                                        backgroundColor: 'transparent',
-                                        '&.Mui-selected': {
-                                            backgroundColor: 'blue',
-                                            color: 'white',
-
-                                        },
-                                        '&:hover': {
+                                    <ToggleButton
+                                        disableRipple
+                                        disableFocusRipple
+                                        disableTouchRipple
+                                        variant="outlined"
+                                        sx={{
                                             border: '1px solid #000',
+                                            borderRadius: '20px',
                                             backgroundColor: 'transparent',
-                                        },
-                                    }}
-                                    onClick={() => setprice(267000)}
+                                            '&.Mui-selected': {
+                                                backgroundColor: 'blue',
+                                                color: 'white',
 
-                                >
-                                    Only Filtration
-                                </ToggleButton>
+                                            },
+                                            '&:hover': {
+                                                border: '1px solid #000',
+                                                backgroundColor: 'transparent',
+                                            },
+                                        }}
+                                        onClick={() => setprice(267000)}
+
+                                    >
+                                        Only Filtration
+                                    </ToggleButton>
+                                </Stack>
+
+
+                            </div>
+
+
+                        </Stack>
+                        <Stack
+                            sx={{
+                                mt: {
+                                    xs: 3,
+                                    sm: 4
+                                }
+                            }}
+                            direction="row"
+                            alignItems="center"
+                            gap={2}
+                        >
+                            <Typography variant="h6"
+                                style={{ color: 'black' }}
+                                sx={{
+                                    fontSize: {
+                                        xs: "1.2rem",
+                                        sm: "1.3rem",
+                                    }
+                                }}
+                            >
+                                PKR:{price.toLocaleString()}</Typography>
                         </Stack>
 
 
+                        <Stack
+                            sx={{
+                                mt: {
+                                    xs: 3,
+                                    sm: 4
+                                }
+                            }}
+                            direction="row"
+                            alignItems="center"
+                            gap={2}
+                        >
+                            <ToggleButton variant='contained'
+                                value="large"
+                                sx={{
+                                    width: 140,
+                                    border: '1px solid transparent',
+                                    backgroundColor: 'black',
+                                    color: 'white',
+                                    '&:hover': {
+                                        border: '1px solid #000',
+                                        backgroundColor: 'transparent',
+                                        color: 'black'
+                                    },
+                                }}
+                            >
+                                Buy Now
+                            </ToggleButton>
+
+
+                            <ToggleButton
+                                variant="contained"
+                                value="large"
+                                sx={{
+                                    width: 180,
+                                    border: '1px solid black',
+                                    backgroundColor: 'transparent',
+                                    color: 'black',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    gap: 1,
+                                    '&:hover': {
+                                        border: '1px solid #000',
+                                        backgroundColor: 'black',
+                                        color: 'white',
+                                    },
+                                }}
+                            >
+                                <DownloadIcon sx={{ fontSize: 20 }} />
+                                Specification
+                            </ToggleButton>
+
+                        </Stack>
                     </div>
-
-
-                </Stack>
-                <Stack
-                    sx={{
-                        mt: {
-                            xs: 3,
-                            sm: 4
-                        }
-                    }}
-                    direction="row"
-                    alignItems="center"
-                    gap={2}
-                >
-                    <Typography variant="h6"
-                        style={{ color: 'black' }}
-                        sx={{
-                            fontSize: {
-                                xs: "1.2rem",
-                                sm: "1.3rem",
-                            }
-                        }}
-                    >
-                        PKR:{price.toLocaleString()}</Typography>
-                </Stack>
-
-
-                <Stack
-                    sx={{
-                        mt: {
-                            xs: 3,
-                            sm: 4
-                        }
-                    }}
-                    direction="row"
-                    alignItems="center"
-                    gap={2}
-                >
-                    <ToggleButton variant='contained'
-                        value="large"
-                        sx={{
-                            width: 140,
-                            border: '1px solid transparent',
-                            backgroundColor: 'black',
-                            color: 'white',
-                            '&:hover': {
-                                border: '1px solid #000',
-                                backgroundColor: 'transparent',
-                                color: 'black'
-                            },
-                        }}
-                    >
-                        Buy Now
-                    </ToggleButton>
-
-
-                    <ToggleButton
-                        variant="contained"
-                        value="large"
-                        sx={{
-                            width: 180,
-                            border: '1px solid black',
-                            backgroundColor: 'transparent',
-                            color: 'black',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            gap: 1,
-                            '&:hover': {
-                                border: '1px solid #000',
-                                backgroundColor: 'black',
-                                color: 'white',
-                            },
-                        }}
-                    >
-                        <DownloadIcon sx={{ fontSize: 20 }} />
-                        Specification
-                    </ToggleButton>
-
-                </Stack>
-            </div>
-        </Stack >
+                </Stack >
             </Stack >
         </>
     )
