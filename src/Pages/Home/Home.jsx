@@ -6,6 +6,7 @@ import Faq from './Faq/Faq';
 import Hero from './Hero';
 import Homebgsection from './Homebgsection';
 import Homerowsec from './Homerowsec';
+import HyderationBg from './HyderationBg';
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
                 <Aesthetic />
                 <DispanserProduct />
                 <Faq />
+                <HyderationBg />
             </MainLayout>
 
         </>
