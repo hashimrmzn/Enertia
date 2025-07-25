@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import lefticon from '../../assets/images/left-toggle-icon.svg';
 import LeftMenu from './HeaderComponents/LeftMenu';
-import { Link } from 'react-router-dom';
-import SiteLogo from '../../assets/images/logo.svg';
+import HeaderLogo from "./HeaderComponents/HeaderLogo";
+
 function Header() {
     const [show, setShow] = useState(false);
    const handleMenu =()=>{
@@ -21,11 +21,7 @@ function Header() {
         <>
             <header className="site-header">
                 <div className='header-inner flex-row just-space-between'>
-                    <div className='site-logo'>
-                        <Link to="/">
-                            <img src={SiteLogo} alt="Site Logo" />
-                        </Link>
-                    </div>
+                    <HeaderLogo />
 
                     <div className='right-toggle-btn no-border'>
                         <button onClick={handleMenu}> <img src={lefticon} alt="Toggle" /></button>

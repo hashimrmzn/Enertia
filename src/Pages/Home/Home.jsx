@@ -12,6 +12,7 @@ function Home() {
     return (
         <>
             <MainLayout>
+                <div className='container'>
                 <Hero />
                 <Homebgsection />
                 <Homerowsec />
@@ -20,6 +21,7 @@ function Home() {
                 <DispanserProduct />
                 <Faq />
                 <HyderationBg />
+                </div>
             </MainLayout>
 
         </>

@@ -13,10 +13,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 function handleHeaderBg() {
   const header = document.querySelector(".site-header");
-  if (!header) return;                    
-  const scrolled = window.scrollY > 50; 
+  const logo = document.querySelector("img.sitelogo");
+
+  if (!header || !logo) return;
+
+  const scrolled = window.scrollY > 50;
+
   header.classList.toggle("bg-header", scrolled);
+  logo.classList.toggle("dark-logo", scrolled);
 }
+
 
 
 window.addEventListener("scroll", handleHeaderBg);

@@ -108,7 +108,9 @@ h1 {
   line-height: 100%;
   text-transform: uppercase;
 }
-
+h2{
+  font-size: 38px;
+}
 .hero-content {
   text-align: center;
 }
@@ -529,6 +531,9 @@ line-height: 150%;
 .footer-menu-links li a:hover {
   transform: translateX(8px);
 }
+.dark-logo {
+  filter: brightness(0) saturate(100%);
+}
 
 @media only screen and (max-width: 1024px) {
   .hero-top-img {
@@ -628,10 +633,6 @@ line-height: 150%;
 
   .single-icon-box {
     min-width: auto;
-  }
-
-  header.site-header {
-    background-color: #fff;
   }
 
   .hero-text-content {
