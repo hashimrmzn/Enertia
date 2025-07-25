@@ -1,7 +1,13 @@
 import images from '../../../utils/images';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Instant() {
+     useEffect(() => {
+         AOS.init({ duration: 1000, once: true });
+       }, []);
     return (
-        <section className='home-row-secs'>
+        <section className='home-row-secs' data-aos="fade-left">
             <div className='home-row-sec-content flex-row just-space-between align-cent'>
                 <div className='small-col'>
                     <h2>Instant Refreshment </h2>

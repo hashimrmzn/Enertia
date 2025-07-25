@@ -1,7 +1,13 @@
 import images from '../../../utils/images';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function Purity() {
+    useEffect(() => {
+                 AOS.init({ duration: 1000, once: true });
+               }, []);
     return (
-        <section className='home-row-secs'>
+        <section className='home-row-secs' data-aos="fade-right">
             <div className='home-row-sec-content flex-row just-space-between align-cent'>
                 <div className='large-col'>
                     <img src={images['purity.png']} alt="Sparkling Water" />
