@@ -86,6 +86,7 @@ function AboutBanner() {
                             About us
                         </Typography>
                         <Typography
+                        className='textanimation'
                             mt={2}
                             variant='h1'
                             color='#fff'

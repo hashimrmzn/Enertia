@@ -28,6 +28,7 @@ function DesignSection() {
             >
               
                 <Stack
+                data-aos="fade-right"
                     width={{
                         xs: '100%',
                         md: '35%',
@@ -60,6 +61,7 @@ function DesignSection() {
 
                
                 <Box
+                data-aos="fade-left"
                     component="img"
                     src={images['dimage.png']}
                     alt="Design"
