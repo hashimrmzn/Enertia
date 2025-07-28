@@ -16,7 +16,11 @@ function Endure() {
                 <Stack
                     sx={{
                         backgroundColor: "#000",
-                        padding: "40px",
+                        padding: {
+                            xs: "20px",
+                            sm: "20px",
+                            md: "40px"
+                        },
                         width: {
                             xs: "80%",
                             sm: "400px",
