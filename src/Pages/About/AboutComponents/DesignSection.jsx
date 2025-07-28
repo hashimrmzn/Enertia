@@ -7,6 +7,7 @@ import { Typography } from '@mui/material';
 function DesignSection() {
     return (
         <Box
+        className='noscroll'
             component="section"
             sx={{
                 padding: {
