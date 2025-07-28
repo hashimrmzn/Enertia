@@ -24,6 +24,7 @@ function HyderationBg() {
                     }
                 >
                     <Typography
+                    className='textanimation'
                         variant='h2'
                         sx={{
                             color: "#fff",
@@ -44,6 +45,7 @@ function HyderationBg() {
                     </Typography>
 
                     <Typography
+                    data-aos="fade-left"
                         variant='body1'
                         sx={{
                             mt: "30px",
@@ -69,6 +71,7 @@ function HyderationBg() {
                         mt={"40px"}
                     >
                         <ToggleButton
+                        data-aos="fade-left"
                             sx={{
                                 padding: "15px 30px",
                                 backgroundColor: "#fff",
@@ -88,6 +91,7 @@ function HyderationBg() {
                         </ToggleButton>
 
                         <ToggleButton
+                        data-aos="fade-left"
                             sx={{
                                 padding: "15px 30px",
                                 backgroundColor: "transparent",

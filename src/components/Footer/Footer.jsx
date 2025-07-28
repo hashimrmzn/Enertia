@@ -43,6 +43,7 @@ function Footer() {
                                 </Link>
                             </div>
                             <Typography
+                            className='textanimation'
                                 variant='body1'
                                 mt={"20px"}
                                 sx={{

@@ -20,6 +20,7 @@ function Faq() {
 
             <Stack maxWidth={'800px'} margin={'0 auto'}>
                 <Typography
+                className='textanimation'
                     variant="h3"
                     sx={{
                         textAlign: 'center',
