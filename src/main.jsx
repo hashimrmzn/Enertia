@@ -29,10 +29,12 @@ window.addEventListener("scroll", handleHeaderBg);
 
 handleHeaderBg();
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const target = document.querySelector('.textanimation');
+// here animtion text js starts
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const targets = document.querySelectorAll('.textanimation');
 
-    if (target) {
+    targets.forEach(target => {
       const text = target.textContent;
       target.textContent = '';
 
@@ -42,10 +44,12 @@ handleHeaderBg();
         span.style.animationDelay = `${index * 0.05}s`;
         target.appendChild(span);
       });
+
+      // Observer for each element
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            target.classList.add('visible');
+            entry.target.classList.add('visible');
           }
         });
       }, {
@@ -53,6 +57,11 @@ handleHeaderBg();
       });
 
       observer.observe(target);
-    }
-  });
+    });
+  }, 500);
+});
+
+
+  
+  
   }

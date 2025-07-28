@@ -3,10 +3,10 @@ import images from '../../utils/images';
 function CarbonFootprint() {
     return (
         <>
-            <section className='carbon-footprint-sec'>
-                <p>Opulent Energy Efficiency</p>
-                <h2>Reduces carbon footprint with refined energy use</h2>
-                <div className='multi-footprint'>
+            <section className='carbon-footprint-sec noscroll'>
+                <p data-aos="fade-right">Opulent Energy Efficiency</p>
+                <h2 data-aos="fade-right">Reduces carbon footprint with refined energy use</h2>
+                <div className='multi-footprint' data-aos="fade-left">
                     <div className='single-footprint'>
                         <img src={images['carbon-1.png']} alt="Crabon Footprint" />
                         <h3>Filter & Bottle Replacement Alerts</h3>

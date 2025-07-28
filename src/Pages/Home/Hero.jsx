@@ -17,7 +17,7 @@ function Hero() {
                         }}
                     >
 
-                        <h1>The world’s first All-in-One Water Dispenser</h1>
+                        <h1 className='textanimation'>The world’s first All-in-One Water Dispenser</h1>
                         <div className='bottom-hero-icons flex-row just-center'>
                             <div className='single-icon-box' data-aos="fade-up">
                                 <img src={images['hero-icon-1.png']} alt="Sparkling Water" />

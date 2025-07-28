@@ -39,6 +39,7 @@ function DispanserProduct() {
     return (
         <>
             <Stack
+            className='noscroll'
                 sx={{
                     py: {
                         xs: 6,
@@ -52,7 +53,7 @@ function DispanserProduct() {
                     alignItems="center"
                     justifyContent="space-between"
                 >
-                    <div className='product-img'>
+                    <div className='product-img' data-aos="fade-right">
                         <img
                             src={productColor[color].image}
                             alt={`${color} product`}
@@ -60,7 +61,7 @@ function DispanserProduct() {
                         />
 
                     </div>
-                    <div className='product-detail'>
+                    <div className='product-detail' data-aos="fade-left">
                         <div className='product-detail-top-content'>
                             <Typography variant='h3' mb={3}
                                 sx={

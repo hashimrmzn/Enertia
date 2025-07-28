@@ -9,7 +9,7 @@ function Homebgsection() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
             }}>
-            <h2>blends effortlessly into your home with a premium, modern aesthetic.</h2>
+            <h2 className='textanimation'>blends effortlessly into your home with a premium, modern aesthetic.</h2>
         </section>
     )
 }
