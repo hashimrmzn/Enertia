@@ -19,15 +19,17 @@ function Hero() {
 
                         <h1>The world’s first All-in-One Water Dispenser</h1>
                         <div className='bottom-hero-icons flex-row just-center'>
-                            <div className='single-icon-box'>
+                            <div className='single-icon-box' data-aos="fade-up">
                                 <img src={images['hero-icon-1.png']} alt="Sparkling Water" />
                                 <p>Sparkling Water</p>
                             </div>
-                            <div className='single-icon-box'>
+                            <div className='single-icon-box' data-aos="fade-up"
+     data-aos-duration="1500">
                                 <img src={images['hero-icon-2.png']} alt="Sparkling Water" />
                                 <p>Bottle less</p>
                             </div>
-                            <div className='single-icon-box'>
+                            <div className='single-icon-box' data-aos="fade-up"
+     data-aos-duration="2000">
                                 <img src={images['hero-icon-3.png']} alt="Sparkling Water" />
                                 <p>Bottle</p>
                             </div>

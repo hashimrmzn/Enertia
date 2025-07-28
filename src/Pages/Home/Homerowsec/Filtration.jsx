@@ -8,7 +8,7 @@ function Filtration() {
     AOS.init({ duration: 1000, once: true });
   }, []);
     return (
-        <section className='home-row-secs' data-aos="fade-right">
+        <section className='home-row-secs noscroll' data-aos="fade-right">
             <div className='home-row-sec-content flex-row just-space-between align-cent'>
                 <div className='large-col'>
                     <img src={images['filter.png']} alt="Sparkling Water" />

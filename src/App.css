@@ -10,7 +10,9 @@ body {
 .scroll {
   overflow-y: hidden;
 }
-
+.noscroll{
+  overflow-x: hidden!important;
+}
 :root {
   background-color: #fff;
 }
@@ -94,12 +96,31 @@ header.site-header {
   z-index: 4;
   width: 100%;
 }
+.textanimation span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.4s forwards;
+  animation-play-state: paused;
+}
+
+.textanimation.visible span {
+  animation-play-state: running;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .container {
   width: 100%;
   max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1 {

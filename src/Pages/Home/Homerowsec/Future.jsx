@@ -7,7 +7,7 @@ function Future() {
              AOS.init({ duration: 1000, once: true });
            }, []);
     return (
-        <section className='home-row-secs' data-aos="fade-left">
+        <section className='home-row-secs noscroll' data-aos="fade-left">
             <div className='home-row-sec-content flex-row just-space-between align-cent'>
                 <div className='small-col'>
                     <h2>Designed for the Future</h2>

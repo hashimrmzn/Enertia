@@ -29,4 +29,30 @@ window.addEventListener("scroll", handleHeaderBg);
 
 handleHeaderBg();
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const target = document.querySelector('.textanimation');
+
+    if (target) {
+      const text = target.textContent;
+      target.textContent = '';
+
+      text.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.animationDelay = `${index * 0.05}s`;
+        target.appendChild(span);
+      });
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.5
+      });
+
+      observer.observe(target);
+    }
+  });
   }
