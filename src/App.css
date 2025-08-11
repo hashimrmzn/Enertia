@@ -102,6 +102,7 @@ header.site-header {
   transform: translateY(20px);
   animation: fadeInUp 0.4s forwards;
   animation-play-state: paused;
+  white-space: pre;
 }
 
 .textanimation.visible span {

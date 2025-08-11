@@ -1,5 +1,4 @@
 import React from 'react'
-import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import images from '../../../utils/images';
 import { Typography } from '@mui/material';

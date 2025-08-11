@@ -29,7 +29,6 @@ window.addEventListener("scroll", handleHeaderBg);
 
 handleHeaderBg();
 
-// here animtion text js starts
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     const targets = document.querySelectorAll('.textanimation');
@@ -40,26 +39,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
       text.split('').forEach((char, index) => {
         const span = document.createElement('span');
-        span.textContent = char;
+        
+        // If it's a space, use a non-breaking space so it doesn't collapse
+        if (char === ' ') {
+          span.innerHTML = '&nbsp;';
+        } else {
+          span.textContent = char;
+        }
+
         span.style.animationDelay = `${index * 0.05}s`;
         target.appendChild(span);
       });
 
-      // Observer for each element
+      // Intersection Observer
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           }
         });
-      }, {
-        threshold: 0.5
-      });
+      }, { threshold: 0.5 });
 
       observer.observe(target);
     });
   }, 500);
 });
+
 
 
   
